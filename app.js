@@ -38,7 +38,8 @@ hoverArea.addEventListener('mouseover', function() {
 
 hoverArea.addEventListener('mouseout', function() {
     hoverArea.style.backgroundImage = initialBackground;
-});*/
+});*/// 1. Language dictionary configuration
+// 1. Language dictionary configuration
 
 
 let currentIndex = 0;

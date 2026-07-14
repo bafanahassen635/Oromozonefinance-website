@@ -1,3 +1,7 @@
+html:lang(am) body {
+  line-height: 1.6;
+}
+
 body{
   color: #222;
 }
@@ -345,6 +349,299 @@ background-color: #eeeeee62;
 .prev { left: 10px; }
 
 .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+/*
+.feed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feed-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.feed-header h2 {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+.feed-header p {
+  color: #666;
+}
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+//Individual Card Styling 
+.article-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Images & Badges 
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 20px;
+  color: #fff;
+}
+.news-badge { background-color: #e53e3e; }
+.blog-badge { background-color: #3182ce; }
+
+/* Text Content Area 
+.card-content {
+  padding: 20px;
+}
+.card-content time {
+  font-size: 0.85rem;
+  color: #888;
+  display: block;
+  margin-bottom: 8px;
+}
+.card-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.card-content h3 a {
+  color: #111;
+  text-decoration: none;
+}
+.card-content h3 a:hover {
+  color: #3182ce;
+}
+.card-content p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.read-more {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #3182ce;
+  text-decoration: none;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+
+*/
+
+
+.finance-news-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+  margin-bottom: 3rem;
+  border-left: 4px solid var(--primary-navy);
+  padding-left: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+/* Top Featured Financial Report */
+.featured-report {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  margin-bottom: 2.5rem;
+  transition: var(--transition);
+}
+
+.featured-report:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  border-color: #cbd5e1;
+}
+
+.featured-img-area {
+  min-height: 380px;
+  /* Placeholder pattern for government finance. Replace with real chart/photo URL */
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+/* Decorative chart background mimic */
+.featured-img-area::before {
+  content: "📈";
+  font-size: 8rem;
+}
+
+.featured-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Secondary Grid Items */
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.report-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+  border-color: #cbd5e1;
+}
+
+.card-img-area {
+  height: 180px;
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 4rem;
+}
+
+/* Individual Card Background Tweaks for variety */
+.report-card:nth-child(1) .card-img-area { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); content: "📊"; color: rgba(255,255,255,0.15);}
+.report-card:nth-child(2) .card-img-area { background: linear-gradient(135deg, #10b981 0%, #047857 100%); content: "🏛️"; color: rgba(255,255,255,0.15);}
+.report-card:nth-child(3) .card-img-area { background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%); content: "🛡️"; color: rgba(255,255,255,0.15);}
+
+.card-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Shared Typography Elements */
+.category-badge {
+  align-self: flex-start;
+  background: #f1f5f9;
+  color: var(--primary-navy);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+}
+
+.report-title {
+  font-size: 1.35rem;
+  color: var(--primary-navy);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  text-decoration: none;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.featured-content .report-title {
+  font-size: 1.85rem;
+  margin-bottom: 1rem;
+}
+
+.report-title:hover {
+  color: var(--accent-blue);
+}
+
+.report-excerpt {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.report-meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+}
+
+.department {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .featured-report {
+      grid-template-columns: 1fr;
+  }
+  .featured-img-area {
+      min-height: 220px;
+  }
+  .featured-content {
+      padding: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
 .contact-card {
   background: #fff;
   padding: 40px;
@@ -463,4 +760,120 @@ height: 30px;
 }
 .demo{
   color: chartreuse;
+}
+
+
+
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #dddddd;
+  padding: 60px 0 20px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Flexbox Layout for Columns */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.about-col {
+  flex: 1.5; /* Gives the bio column a bit more width */
+}
+
+/* Typography & Links */
+.footer-col h3, .footer-col h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: #00adb5; /* Accent color */
+  height: 2px;
+  width: 40px;
+}
+
+.footer-logo span {
+  color: #00adb5;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #00adb5;
+  padding-left: 5px; /* Subtle slide effect on hover */
+  transition: all 0.3s ease;
+}
+
+/* Social Media Icons/Buttons */
+.social-links a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-color: #333333;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #00adb5;
+  transform: translateY(-3px);
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 40px;
+  border-top: 1px solid #333333;
+  font-size: 14px;
+  color: #888888;
+}
+
+/* Responsive Breakpoint for Mobile Devices */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }

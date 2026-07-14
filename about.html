@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About us</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body{
        background-color: cadetblue;
@@ -73,6 +74,21 @@
 <body>
   
   <h1>About Us</h1><br><br>
+  <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en', 
+      // Restrict choices to English, Amharic (am), and Oromo (om)
+      includedLanguages: 'en,am,om', 
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   <div class="translation-container">
   
     <!-- ENGLISH SECTION -->
@@ -112,11 +128,11 @@
     <div class="slides">
       <!-- Slide 1 -->
       <div class="slide">
-        <img src="./images/photo_2026-06-16_15-25-02.jpg" alt="Image 1">
+        <img src="./images/photo_2026-06-16_15-25-02.jpg" alt="Image 1" ><h1>Head of OromoZoneFinanceandEconomy <br>Ato Abdu Muhe</h1>
       </div>
       
       <div class="slide">
-        <img src="./images/photo_2026-06-16_15-33-01.jpg" alt="Image 1">
+        <img src="./images/photo_2026-06-16_15-33-01.jpg" alt="Image 1"><h1>Deputy Head of OromoZoneFinanceandEconomy <br> Ato Ayana Chawaka</h1>
       </div>
       <div class="slide">
         <img src="./images/photo_2026-04-03_10-52-15.jpg" alt="Image 1">
@@ -150,12 +166,58 @@
     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
     <button class="next" onclick="moveSlide(1)">&#10095;</button>
   </div>
-  <h1> Mision/Vision/Value</h1>
-  <p>Mision:-Welcome to the Oromo Beresebzone Finance. At the Finance Office, we are committed to enhancing financial management, transparency and accountability to support the sustainable development of our zone and our country. Here is an understanding of our mission, vision and values;.
-   <br> Vision:-To See effective resource management that accelarates development &nbsp;and ensures the benefit of the society.
-    <br>Values:-
-    Public service: Effectiveness :Hard work and determination Ensuring the participation and benefit of women and youth:Strive to change: Team Work: Work quality and efficiency:Fairness: Professional excellence 
-  </p>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <p>Location</p>
+  <a href="https://www.google.com/maps/place/Kemise/@10.7274882,39.8502871,14z/data=!3m1!4b1!4m6!3m5!1s0x1647f3a707c60e43:0x1bc270af3a20c9e1!8m2!3d10.7231242!4d39.871393!16s%2Fm%2F03gvnd1?entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D">
+    <img src="./images/kemise.jpg" alt="Image 3" style="max-width: 40%;" >
+    
+</a>
+  </div>
+
+   <footer class="site-footer">
+  <div class="footer-container">
+    
+    <div class="footer-col about-col">
+      <h3 class="footer-logo"><span></span></h3>
+      <p></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#Galary">Galary</a></li>
+        <li><a href="#Resource">Resource</a></li>
+        <li><a href="#News&Blogs">News&Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Phone: +251335542119</li>
+        <li>Location: Kemise</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="https://web.facebook.com/OromoZoneFinanceandEconomy/?_rdc=1&_rdr#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">LN</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 OromoZoneFinanceandEconomy. All rights reserved..</p>
+  </div>
+</footer>
   <script>
 
 function toggleLang(lang) {
