@@ -68,7 +68,7 @@ body{
       .text {font-size: 11px}
     }
 #wrapper{
-background-color: #ddd;
+background-color: darkolivegreen;
 }
 
 #navbar{
@@ -83,16 +83,19 @@ background-color: #ddd;
 }
 #navbar nav{
   display: flex;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
 }
 #navbar nav a{
-flex: 0 0 20vw;
-  text-align: center;
- font-size: 1em;
- color: rgb(238, 234, 234);
- text-decoration: none;
- height: 60px;
- line-height: 2em;
- cursor: pointer;
+flex: 0 0 17vw;
+text-align: center;
+font: size 1em;;
+color: rgb(238, 234, 234);
+text-decoration: none;
+height: 60px;
+line-height: 2em;
+cursor: pointer;
 }
 #navbar nav a:hover{
   background-color: blue;
@@ -258,6 +261,9 @@ background-color: #eeeeee62;
   flex: 1;
   border: 1px solid #242121;
   padding: 10px;
+}
+#Resource{
+  background-color: rgb(151, 168, 126);
 }
 .cards{
   display: flex;
